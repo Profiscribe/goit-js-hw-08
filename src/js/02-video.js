@@ -8,8 +8,8 @@
     function durationSaveToStorage({ seconds }) {
          localStorage.setItem(timeKey, seconds)
     }
-window.addEventListener('load', 'newStart');
-player.on('timeupdate', durationSaveToStorage);
+    window.addEventListener('load', newStart);
+    player.on('timeupdate', durationSaveToStorage);
 
 function newStart() {
     if (!localStorage.getItem(timeKey)) {
@@ -30,7 +30,8 @@ player
                 breack;
             default: break;
     }
-})
+    })
+
 
 
   
