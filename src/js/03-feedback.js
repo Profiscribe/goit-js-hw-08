@@ -25,5 +25,5 @@ function storageFormData(event) {
   //   console.log('value input:', event.target.value);
   formValue[event.target.name] = event.target.value;
   //   console.log(formValue);
-  localStorage.setItem(localKey, JSON.stringify(formValue));
+  localStorage.setItem(localKey, JSON.stringify(formValue))
 }
